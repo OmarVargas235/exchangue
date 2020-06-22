@@ -1,0 +1,203 @@
+body {
+	background-color: #EDF2F7;
+}
+
+/*Header*/
+.navbar-blue {
+	background-color: #3182CE;
+}
+
+nav p {
+	margin-bottom: 0;
+	font-size: 1.1rem;
+}
+
+.btn-color {
+	color: white;
+}
+
+.btn-color:hover {
+	background-color: #2B6CB0;
+	color: white;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
+
+.header img {
+	width: 50px;
+	height: 50px;
+}
+
+/*About*/
+h1 {
+	color: #495467;
+	font-size: 3.5rem;
+}
+
+.about .btn-color,
+.table .btn-color {
+	color: #3182CE;
+	background-color: transparent;
+	border: 1px solid #3182CE;
+}
+
+.about .btn-color:hover,
+.table .btn-color:hover {
+	background-color: #3182CE;
+	color: white;
+}
+
+/*Lista Criptomonedas*/
+.table {
+	box-shadow: 0 0 5px 2px #E0E5EA;
+	background-color: #F7FAFC;
+	color: #4A5568;
+}
+
+.table .search {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+.table img {
+	width: 40px !important;
+	height: 40px !important;
+}
+
+.table th, .table td {
+	text-align: center;
+}
+
+.table td {
+	vertical-align: middle !important;
+}
+
+.table .simbolo {
+	color: #B4C0CE;
+}
+
+.table .positivo {
+	color: #38A169;
+}
+
+.table .negativo {
+	color: #E53E3E;
+}
+
+.table-hover tbody tr:hover {
+    color: #777;
+    background-color:#EBF8FF;
+}
+
+.name a {
+	color: black;
+}
+
+.name a:hover {
+	text-decoration: none;
+}
+
+/*Coin*/
+.criptomoneda .name {
+	color: #4A5568 !important;
+	font-size: 1.5rem;
+}
+
+.criptomoneda .simbolo {
+	color: #A1AFC0 !important;
+	font-size: 1.3rem;
+}
+
+.criptomoneda span:first-child {
+	color: #A1AFC0;
+	font-size: 1.2rem;
+}
+
+.criptomoneda span:last-child {
+	color: #4F5A6C;
+	font-size: 1.2rem;
+}
+
+.criptomoneda .btn-coin {
+	background-color: #3182CE;
+	color: white;
+}
+
+.criptomoneda .btn-coin:hover {
+	background-color: #2B6CB0;
+}
+
+/*grafica*/
+.contenedor-grafica {
+	width: 100%;
+	background-color: #F7FAFC;
+	box-shadow: 0 0 3px 1px #D4D9DE;
+	border-radius: 4px;
+}
+
+.apexcharts-text {
+	fill: #A0AEC0;
+	font-size: .9rem;	
+}
+
+.grafica {
+	max-width: 100%; 
+	margin: 1em;
+}
+
+/*Mercados*/
+.mercados h2 {
+	color: #4A5568;
+} 
+
+.mercados p {
+	margin-bottom: 0;
+}
+
+.mercados .tabla-mercados {
+	box-shadow: 0 0 3px .9px #D4D9DE;
+	border-radius: 8px;
+}
+
+.mercados li {
+	background-color: #F7FAFC;
+}
+
+.mercados .baseSymbol {
+	color: #B7C1CC;
+}
+
+.mercados td {
+	padding: 20px 12px !important;
+}
+
+@media (min-width: 425px) {
+	.mercados .table-responsive {
+		display: table;
+	}
+}
+
+/*footer*/
+footer {
+	background-color: #E2E8F0;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+footer span {
+	color: #E25555;
+	font-size: 1.3rem;
+}
+
+/*Responsi*/
+@media (max-width: 425px) {
+	.criptomoneda {
+		padding-right: 2rem !important;
+		padding-left: 2rem !important;
+	}
+}
