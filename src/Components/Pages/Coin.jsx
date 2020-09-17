@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
+import { css } from "@emotion/core";
+import CircleLoader from "react-spinners/CircleLoader";
 import { useDispatch, useSelector } from 'react-redux';
-import { obtenerCriptomonedaAction } from '../../actions/criptomonedasAction';
-import { precioUltimas24horasAction } from '../../actions/variacionCriptomonedaAction';
-import { criptomonedasMercadosAction } from '../../actions/mercadosCriptomonedasAction';
+import { obtenerCriptomonedaAction } from '../../redux/actions/criptomonedasAction';
+import { precioUltimas24horasAction } from '../../redux/actions/variacionCriptomonedaAction';
+import { criptomonedasMercadosAction } from '../../redux/actions/mercadosCriptomonedasAction';
 
 import Error from '../Atoms/Error';
 import Criptomoneda from '../Organims/Criptomoneda';
 import Grafica from '../Molecules/Grafica';
 import MercadosCriptomoneda from '../Organims/MercadosCriptomoneda';
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+`;
 
 const Coin = ({ match }) => {
 
@@ -33,12 +40,18 @@ const Coin = ({ match }) => {
 	return (
 		<React.Fragment>
 			{
-				variacionEstado ? <div className="d-flex justify-content-center mt-5"><div className="spinner-border text-danger"></div>
+				variacionEstado ? <div className="mt-5">
+					<CircleLoader
+			          css={override}
+			          size={100}
+			          color={"#4E7294"}
+			          loading={variacionEstado}
+			        />
 				</div>
 				: <React.Fragment>
 					{
 						errorCargar ? <div className="container"> <Error /> </div>
-						: <div className="row mt-5 pb-0 pt-5 px-5 criptomoneda no-gutters">
+						: <div className="row mt-5 pb-0 pt-5 px-5 criptomoneda no-gutters animate__animated animate__fadeIn">
 							<Criptomoneda />
 							<Grafica />
 							<MercadosCriptomoneda />

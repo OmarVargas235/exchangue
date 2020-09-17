@@ -73,6 +73,7 @@ h1 {
 
 .table td {
 	vertical-align: middle !important;
+	padding-right: .3rem;
 }
 
 .table .simbolo {
@@ -98,6 +99,23 @@ h1 {
 
 .name a:hover {
 	text-decoration: none;
+}
+
+/*filas de paginas*/
+.fila-paginas {
+	background-color: #F6F9FB;
+	border-top: 1px solid #DEE2E6;
+	box-shadow: 0 5px 5px 2px #E0E5EA;
+}
+
+.habilitar-flecha {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.desabilitar-flecha {
+	cursor: context-menu;
+	opacity: .2;
 }
 
 /*Coin*/

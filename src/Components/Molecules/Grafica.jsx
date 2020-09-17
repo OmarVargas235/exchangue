@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Chart from "react-apexcharts";
 import { useSelector } from 'react-redux';
-import { graficaHora } from '../../helper';
+import { graficaHora } from '../../utils/helper';
 
 const Grafica = () => {
 

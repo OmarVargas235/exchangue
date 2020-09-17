@@ -54,7 +54,7 @@ const CriptomonedaDatos = ({ criptomoneda }) => {
 				}>{variacion}</span>
 			</td>
 			<td className="d-none d-md-table-cell">
-				<Link className="btn btn-color px-3 font-weight-bold py-2 px-4"
+				<Link className="btn btn-color px-2 font-weight-bold py-2 px-4"
 				to={`/coin/${id}`}>Details</Link>
 			</td>
 		</tr>

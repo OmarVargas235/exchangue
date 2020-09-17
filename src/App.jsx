@@ -1,5 +1,6 @@
 import React from 'react';
-import store from './store';
+import store from './redux/store';
+import 'animate.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
